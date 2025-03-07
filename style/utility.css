@@ -1,0 +1,66 @@
+/* Paddings */
+
+.px-40{
+  padding-inline: var(--px-40);
+}
+
+.px-32{
+  padding-inline: var(--px-32);
+}
+
+.py-64{
+  padding-block: var(--py-64);
+}
+
+.py-40{
+  padding-block: var(--py-40);
+}
+
+.py-32{
+  padding-block: var(--py-32);
+}
+
+.py-12{
+ padding-block: var(--py-12);
+}
+
+.py-16{
+  padding-block: var(--py-mobile);
+}
+
+/* Utility */
+
+.flex{
+  display: flex;
+}
+
+.center{
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+}
+
+.gap-1{
+  gap: 1rem;
+}
+
+/* Display */
+.desktop-only{
+  display: initial;
+}
+
+.smartphone-only{
+  display: none;
+}
+
+@media (width <= 25.875rem){
+  .smartphone-only{
+    display: initial;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+}
