@@ -68,7 +68,7 @@ html{
   }
   
   span {
-  font: var(--fw-md) var(--fs-14) var(--ff-inter);
+  font: var(--fw-bold) var(--fs-64) var(--ff-syne);
   }
 
   a{
