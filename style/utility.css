@@ -20,6 +20,10 @@
   padding-block: var(--py-32);
 }
 
+.py-20{
+  padding-block: var(--py-20);
+}
+
 .py-12{
  padding-block: var(--py-12);
 }
