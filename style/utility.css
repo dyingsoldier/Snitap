@@ -59,7 +59,7 @@
   display: none;
 }
 
-@media (width <= 25.875rem){
+@media (width <= 34rem){
   .smartphone-only{
     display: initial;
   }

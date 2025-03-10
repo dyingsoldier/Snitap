@@ -33,6 +33,57 @@ section.hero{
     animation: SlideUp 7s infinite ease;
     /* border: 1px solid black; */
   }
+
+  & .buttons{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    & > a{
+      font: var(--fw-md) var(--fs-16) var(--ff-montserrat);
+    }
+    
+    & .button{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    border-radius: 5rem;
+    
+    transition: scale 350ms;
+    
+    &.buy{
+      padding: 1.5rem 3rem;
+      background-color: var(--snitap-sun);
+    }
+
+    &.shadow{
+      box-shadow: 0px 36px 15px rgba(0, 0, 0, 0.01),
+      0px 20px 12px rgba(0, 0, 0, 0.05),
+      0px 9px 9px rgba(0, 0, 0, 0.09), 
+      0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &.play span{
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 5rem;
+      }
+
+    &:hover{
+      scale: 1.1;
+    }
+  }
+  
+    & span{
+      font: inherit;
+    }
+  
+   & img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    
+  }
 }
 
 @keyframes SlideUp{

@@ -80,11 +80,9 @@ html{
 
   img{
   width: 100%;
-  display: block;
-  border-radius: 2.5rem;
   }
 
-  @media (width <= 25.875rem){
+  @media (width <= 34rem){
     :root{
       --px-32: 1.5rem;
 
