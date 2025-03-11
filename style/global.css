@@ -24,6 +24,7 @@
   /* Font Size */
 --fs-64: 4rem/1.25;
 --fs-40: 2.5rem/1.2;
+--fs-32: 2rem/1.25;
 --fs-20: 1.25rem/1.2;
 --fs-16: 1rem/1.5;
 --fs-14: .875rem/1.5;
@@ -78,15 +79,13 @@ html{
   text-decoration: none;
   }
 
-  img{
-  width: 100%;
-  }
-
-  @media (width <= 34rem){
+  @media (width <= 30rem){
     :root{
-      --px-32: 1.5rem;
+      --px-32: 1rem;
 
       --py-32: 1.5rem;
       --py-64: 3rem;
+
+      --py-20: .75rem;
     }
   }

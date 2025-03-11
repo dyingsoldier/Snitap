@@ -42,3 +42,10 @@ header{
     }
   }
 }
+
+@media (width <= 30rem) {
+  header{
+  --max-width: 30rem;
+  width: min(var(--max-width), 100% - var(--px-32) * 2);
+  }
+}
