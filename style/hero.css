@@ -141,13 +141,14 @@ section.hero{
     img[src*="Stars 2"]{
       max-width: 2.5rem;
       height: 3.75rem;
+      opacity: 0;
       z-index: 0;
 
       right: .125rem;
       top: 16.875rem;  
 
-      transform: translateX(400%);
-      animation: SlideIn 2.2s 800ms ease forwards;
+      transform: translateX(600%);
+      animation: SlideIn 2.2s 800ms ease forwards, Opacity 100ms 800ms forwards;
     } 
   }
 }
