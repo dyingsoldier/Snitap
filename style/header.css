@@ -11,7 +11,7 @@ header.top{
   height: 2rem;
   border-radius: 0;
 
-  transition: transform 500ms;
+  transition: transform 300ms;
   }
 
   img[src*= "logo"]:hover {

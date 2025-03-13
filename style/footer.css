@@ -1,0 +1,133 @@
+footer{
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  padding: 4rem 2rem 2rem;
+  justify-content: space-between;
+
+  & span{
+    font: var(--fw-md) var(--fs-16) var(--ff-montserrat);
+  }
+
+  & .logo{
+    
+    a{
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    img:hover{
+      transform: rotate(90deg);
+    }
+
+    & img{
+      transition: transform 500ms;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &  span{
+        font: var(--fw-bold) var(--fs-20) var(--ff-syne);
+      }
+  }
+
+  & nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    & a{
+      position: relative;
+
+      &:hover::after{
+        transform: scaleX(1);
+      }
+    }
+
+    & a::after{
+      content: "";
+      width: 100%;
+      height: auto;
+      border: 2px solid var(--snitap-sky-mid);
+      bottom: 0;
+      left: 0;
+
+      transform: scaleX(0);
+      position: absolute;
+      transition: transform 500ms;
+    }
+  }
+
+  & .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+
+     & a{
+      position: relative;
+
+      width: 2.5rem;
+      height: 2.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 5rem;
+
+      &:hover::before{
+        scale: 1;
+      }
+
+      & img{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      
+      &::before{
+        position: absolute;
+        content: "";
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        
+        background-color: var(--snitap-sun);
+        z-index: -1;
+        scale: 0;
+        transition: scale 500ms;
+      }
+    }
+  }
+}
+
+@media (width <= 30rem){
+  footer{
+    max-width: 30rem;
+    margin-inline: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: inherit;
+    gap: 3rem;
+    padding: 3rem 1.5rem 1.5rem;
+
+
+
+    & nav{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    & .social-links{
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
